@@ -1,0 +1,304 @@
+﻿@font-face{
+	font-family: 'Roboto Regular';
+	src: url(./fonts/roboto-regular.woff2) format("woff2"), url(./fonts/roboto-regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+} 
+
+body {
+	margin: 0 !important;
+    min-width: 320px;
+	background: #eaeae9;
+}
+
+.main-header {
+    position: relative;
+    height: 90px;
+    background: #3888AD;
+}
+
+.main-header__box {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    top: 30px;
+    padding: 5px 20px;
+    width: 100%;
+    max-width: 450px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 0.1px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.main-header__box:after {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+.main-header__box img {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+/*FORM*/
+
+.panel-body {
+	padding: 20px 20px 20px;
+	margin: 0 auto;
+	max-width: 450px;
+	background: #fff;
+}
+
+.form-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+	position: relative;
+	margin: 20px 0 0;
+}
+
+.form-group label {
+	display: none;
+}
+
+.form-control {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    border: 1px solid #eee;
+    border-radius: 0;
+    width: 100%;
+    height: 60px;
+    color: #333;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    -webkit-appearance: none;
+    -ms-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+}
+
+.form-control:focus {
+	border-color: #3888AD;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+input:focus + .form-group__clear, 
+input:hover + .form-group__clear, 
+.form-group__clear:hover {
+	opacity: 1;
+	visibility: visible;
+}
+
+.form-group__clear {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    outline: none !important;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    visibility: hidden;
+    color: #333;
+    background: #eee;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    -ms-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, color 0.175s ease-in-out, background 0.175s ease-in-out;
+}
+
+.form-group__clear.persistent {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-group__edit {
+    top: 10px;
+    right: 15px;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    position: absolute;
+    background: transparent;
+}
+
+.form-group__clear:hover {
+	background: #e0e0e0;
+}
+
+.form-group .glyphicon {
+    vertical-align: middle;
+}
+
+.form-group__clear .glyphicon {
+    top: -1px;
+}
+
+.form-group__edit .glyphicon {
+    top: 1px;
+}
+
+.form-group__edit .glyphicon-pencil.readonly {
+    display: inline-block;
+    color: #555;
+}
+
+.form-group__edit .glyphicon-pencil {
+    display: none;
+}
+
+.form-group .btn-primary {
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: #4cac51;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: normal;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-group .btn-primary:hover, 
+.form-group .btn-primary:active, 
+.form-group .btn-primary:focus {
+	background: #4cac51;
+}
+
+.form-group .btn-primary:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+.alert {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.snackbar {
+    position: fixed;
+    z-index: 300;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    padding: 20px;
+    color: #eee;
+    opacity: 0;
+    visibility: hidden;
+    background: #434c55;
+    font-family: 'Roboto Regular', Arial, sans-serif;
+    font-size: 16px;
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transition: 
+    	opacity 0.3s ease-in-out,
+    	visibility 0.3s ease-in-out,
+    	transform 0.3s ease-in-out;
+    background: #ec4a41;
+}
+
+.snackbar.is-open {
+	opacity: 1;
+	visibility: visible;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.snackbar[data-state="success"] {
+    color: #fff;
+    background: #22B745;
+}
+
+.snackbar[data-state="error"] {
+    color: #fff;
+    background: #ec4a41;
+}
+
+.snackbar__message {
+    overflow: hidden;
+    margin: 10px;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.description-text {
+	padding: 10px 0;
+	margin: 0 auto;
+	max-width: 320px;
+	opacity: 0.5;
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.rule-box p {
+	padding: 0;
+	margin: 0;
+	opacity: 0.5;
+	font-family: 'Roboto Regular', Arial, sans-serif;
+	font-size: 12px;
+}
+
+.form-group__row {
+	margin: 0 -10px;
+}
+
+.form-group__row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.form-group__col {
+	float: left;
+	padding: 0 10px;
+	width: 50%;
+}
+
+.form-group .btn-sm {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 400px) {
+    .description-text {
+    	max-width: 280px;
+        font-size: 16px;
+    }
+
+    .form-group__col {
+        width: 100%;
+    }
+
+    .form-group__col:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+

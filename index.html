@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+<header class="main-header">
+    <div class="main-header__box">
+        <img src="./assets/b2b.svg" alt="B2B soft">
+    </div>
+</header>
+
+<div class="panel-body">
+    <form action="post.php" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label for="companyId">Access Code</label>
+                <input class="form-control" id="companyId" maxlength="100" name="companyId" placeholder="Access Code" required="true" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input required="" name="username" autofocus="" id="username" type="text" class="form-control" placeholder="Username" maxlength="100" value="">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input required="" id="password" name="password" type="password" class="form-control" placeholder="Password" maxlength="100" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <button id="btnSubmit" class="btn btn-primary" name="button" value="login">Login</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<script src="./assets/scripts.js"></script>
+
+</body>
+</html>

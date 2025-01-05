@@ -1,0 +1,19 @@
+﻿a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.text-danger {
+    margin-top: 8px;
+    display: block;
+}
+
+.form__reset-password .rule-box p {
+    opacity: 0.8;
+    font-size: 14px
+}
+
+.reset-password__confirmed {
+    text-align: center
+}
